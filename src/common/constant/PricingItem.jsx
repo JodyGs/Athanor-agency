@@ -29,7 +29,8 @@ export const PricingItem = [
 		benefit: {
 			1: "Medium Pack(inclus)",
 			2: "Maintenance et mise à jour 365 jours",
-			3: "Automatisation - Notifications WhatsApp - Chatbot.",
+			3: "Automatisation",
+			4: "Systeme de communication",
 		},
 	},
 ];
