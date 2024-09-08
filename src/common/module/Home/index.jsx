@@ -17,10 +17,10 @@ const Homepage = () => {
 			<Service />
 			<Solution />
 			<Pricing />
-			<Faq />
+			{/* <Faq /> */}
 			{/* <Blog /> */}
-			<Feedback />
-			<Interest />
+			{/* <Feedback /> */}
+			{/* <Interest /> */}
 		</div>
 	);
 };
