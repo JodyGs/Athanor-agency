@@ -1,10 +1,12 @@
 import Button from "@/common/component/element/Button";
+import Buttons from "@/common/component/element/Buttons";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
 import PricingCard from "@/common/component/element/PricingCard";
 import SectionHeading from "@/common/component/element/SectionHeading";
-import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { AiFillSliders } from "react-icons/ai";
+import { FaPiedPiper } from "react-icons/fa";
 
 export default function Pricing() {
 	return (
@@ -29,13 +31,30 @@ export default function Pricing() {
 
 			<PricingCard />
 
-			<ComponentTransition className="w-full md:flex-row flex-col items-center flex justify-center gap-3">
-				<Link href="/solution" className="w-full rounded-full">
-					<Button
-						title="Une bseoin spécifque ? Prenons rendez-vous."
-						className="hover:!bg-neutral-950 hover:dark:!bg-neutral-100 transition-colors !rounded-full duration-300 overflow-hidden !bg-transparent outline outline-1 dark:outline-white outline-neutral-950 dark:!text-white !text-black w-full py-5"
+			<ComponentTransition className="border-[1px] border-neutral-600 rounded-3xl max-md:flex-col flex">
+				<div className="w-full h-auto md:h-[400px] md:basis-[50%] overflow-hidden  max-md:rounded-t-3xl  lg:rounded-tl-3xl lg:rounded-bl-3xl ">
+					<Image
+						src="/robot.jpg"
+						alt="Header Image"
+						width={400}
+						height={400}
+						loading="lazy"
+						className="w-full object-cover md:top-[-100px] relative"
 					/>
-				</Link>
+				</div>
+				<div className="w-full px-5 lg:px-10 py-5 md:basis-[50%] h-[400px] bg-neutral-50 dark:bg-neutral-950/50   rounded-br-3xl rounded-tr-3xl">
+					<FaPiedPiper size={50} />
+					<h3 className="text-2xl font-bold py-2 text-neutral-800 dark:text-neutral-300">
+						Un besoin spécifique ?
+					</h3>
+					<p className="text-base mb-10 text-neutral-700 mt-5 max-xl:line-clamp-5 dark:text-neutral-300">
+						Notre mission est de simplifier vos processus et améliorer votre
+						efficacité. Si vous avez des besoins spécifiques, nous adaptons nos
+						services pour répondre parfaitement à vos attentes et garantir votre
+						succès.
+					</p>
+					<Buttons className="!px-10 " title="Je veux en discuter" />
+				</div>
 			</ComponentTransition>
 		</div>
 	);

@@ -26,7 +26,6 @@ export const PricingItem = [
 		plan: "Premium",
 		desc: "Le pack expression",
 		price: "1999€",
-		payTime: " / mo",
 		benefit: {
 			1: "Medium Pack(inclus)",
 			2: "Maintenance et mise à jour 365 jours",

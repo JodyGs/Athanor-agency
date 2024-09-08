@@ -50,7 +50,7 @@ export default function PricingCard() {
 						</ul>
 					</div>
 					<div className="w-full flex justify-center items-center">
-						<ButtonSpot className="w-full" title="Choose Plan" />
+						<ButtonSpot className="w-full" title="Je veux être visible" />
 					</div>
 				</ComponentTransition>
 			))}

@@ -56,7 +56,7 @@ const Card = () => {
 					Optimisation SEO
 				</h2>
 				<h3 className="text-sm text-neutral-700 dark:text-neutral-300">
-					Un site web prêt à e3tre indexé
+					Un site web prêt à être indexé
 				</h3>
 				<p className="text-sm text-neutral-700 line-clamp-2 dark:text-neutral-400 mt-3">
 					Nous construisons votre site en respectant les exigences SEO des

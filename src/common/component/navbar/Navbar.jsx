@@ -46,16 +46,16 @@ const Navbar = () => {
 						className="group relative w-auto flex justify-start items-start"
 					>
 						{/* <Logos /> */}
-						<h1
+						<h4
 							className={`${
 								open ? "text-white" : ""
 							}  text-3xl tracking-[-0.10em] font-bold`}
 						>
 							Athanor
-						</h1>
+						</h4>
 					</Link>
 				</div>
-				<div className="lg:flex hidden justify-center gap-10 items-center w-full">
+				{/* <div className="lg:flex hidden justify-center gap-10 items-center w-full">
 					{NavigationItem.map((item, index) => (
 						<Link
 							href={item.src}
@@ -74,20 +74,20 @@ const Navbar = () => {
 							></div>
 						</Link>
 					))}
-				</div>
+				</div> */}
 
-				<div className="lg:hidden flex  items-center">
+				{/* <div className="lg:hidden flex  items-center">
 					<div className="px-2">
 						<DarkmodeSwitch />
 					</div>
 					<NavMobile open={open} handleOpen={handleOpen} close={close} />
-				</div>
+				</div> */}
 
 				<div className="lg:flex hidden w-[35%] items-center justify-end">
 					<div className="px-2">
 						<DarkmodeSwitch />
 					</div>
-					<ButtonSpot title="Get This Template" />
+					<ButtonSpot title="Nous contacter" />
 				</div>
 			</div>
 		</motion.div>
