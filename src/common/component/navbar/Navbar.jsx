@@ -1,14 +1,11 @@
 "use client";
 import clsx from "clsx";
 import Link from "next/link";
-import NavMobile from "./NavMobile";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { NavigationItem } from "@/common/constant/NavigationItem";
 import { usePathname } from "next/navigation";
-import dynamic from "next/dynamic";
-import { ButtonSpot } from "../element/ButtonSpot";
 import DarkmodeSwitch from "../element/DarkmodeSwitch";
+import { ButtonSpot } from "../element/ButtonSpot";
 
 // const Logos = dynamic(() => import('./Logo'), {
 //   ssr: false
@@ -87,7 +84,11 @@ const Navbar = () => {
 					<div className="px-2">
 						<DarkmodeSwitch />
 					</div>
-					<ButtonSpot title="Nous contacter" />
+					<ButtonSpot
+						onClick={() => router.push("https://cal.com/jody.gs/30min")}
+						title="Nous contacter"
+						exLink={"https://cal.com/jody.gs/30min"}
+					/>
 				</div>
 			</div>
 		</motion.div>

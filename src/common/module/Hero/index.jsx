@@ -74,6 +74,7 @@ const Hero = () => {
 						<ButtonSpot
 							title="Je crée ma présence sur le web"
 							className="!rounded-md !w-auto !py-2"
+							exLink={"https://cal.com/jody.gs/30min"}
 						/>
 					</motion.div>
 				</div>

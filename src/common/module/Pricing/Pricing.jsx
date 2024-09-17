@@ -1,5 +1,3 @@
-import Button from "@/common/component/element/Button";
-import Buttons from "@/common/component/element/Buttons";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
 import PricingCard from "@/common/component/element/PricingCard";
 import SectionHeading from "@/common/component/element/SectionHeading";
@@ -7,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { AiFillSliders } from "react-icons/ai";
 import { FaPiedPiper } from "react-icons/fa";
+import { ButtonSpot } from "@/common/component/element/ButtonSpot";
 
 export default function Pricing() {
 	return (
@@ -53,7 +52,11 @@ export default function Pricing() {
 						services pour répondre parfaitement à vos attentes et garantir votre
 						succès.
 					</p>
-					<Buttons className="!px-10 " title="Je veux en discuter" />
+					<ButtonSpot
+						exLink={"https://cal.com/jody.gs/30min"}
+						className="!px-10 "
+						title="Je veux en discuter"
+					/>
 				</div>
 			</ComponentTransition>
 		</div>
