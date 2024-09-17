@@ -27,7 +27,7 @@ export const PricingItem = [
 		desc: "Le pack expression",
 		price: "1999€",
 		benefit: {
-			1: "Medium Pack(inclus)",
+			1: "Pro Pack(inclus)",
 			2: "Maintenance et mise à jour 365 jours",
 			3: "Automatisation",
 			4: "Systeme de communication",
